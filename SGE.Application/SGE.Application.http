@@ -1,0 +1,6 @@
+@SGE.Application_HostAddress = http://localhost:5209
+
+GET {{SGE.Application_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

@@ -1,0 +1,15 @@
+services:
+  sgeapi:
+    build:
+      context: .
+      dockerfile: ./SGE.Application/Dockerfile
+    container_name: sg-api
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ConnectionStrings__DefaultConnection=Server=tcp:sge-api.database.windows.net,1433;Initial Catalog=SGE-DB;Persist Security Info=False;User ID=adminUser;Password=Esteban123!;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;
+    ports:
+      - "8080:8080"
+    restart: unless-stopped
+
+volumes:
+  mssql-data:
