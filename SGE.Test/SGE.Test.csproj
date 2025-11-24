@@ -17,6 +17,12 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\SGE.Data\SGE.Data.csproj" />
+    <ProjectReference Include="..\SGE.Services\SGE.Services.csproj" />
+    <ProjectReference Include="..\SGE.Shared\SGE.Shared.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Using Include="Xunit" />
   </ItemGroup>
 
