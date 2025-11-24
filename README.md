@@ -90,6 +90,7 @@ Una vez que el API este corriendo, abrir el navegador en:
 http://localhost:8080/swagger
 
 Ahí encontrara el playground de swagger para realizar consultas o si se desea hacerlo por postman.
+
 ------------------------------------------------------------------------
 
 Endpoints
@@ -142,7 +143,7 @@ Body:
 ------------------------------------------------------------------------------
 
 
- Pruebas Unitarias
+Pruebas Unitarias
 
 Ejecutar todas las pruebas con: dotnet test
 
@@ -163,6 +164,13 @@ UpdateAsync, DeleteAsync.
 -   Docker
 
 ------------------------------------------------------------------------
+
+El proyecto carece de endpoints para login, de autenticacion y autorizacion.
+Es simple pero bastante flexible para nuevas implementaciones como:
+
+- Autenticacion y Autoricacion con JWT.
+- Ampliacion de endpoints y servicios para CRUD de departamentos y Cargos.
+- Middleware de Autentiacion.
 
 -- Autor --
 
